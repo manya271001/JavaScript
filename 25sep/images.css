@@ -1,0 +1,12 @@
+.structure{
+    display: flex;
+    gap: 30px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.structure .left img{
+    height: 250px;
+
+}

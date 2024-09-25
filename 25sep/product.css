@@ -1,0 +1,29 @@
+#product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product #ar1 div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 24px;
+}
+#product #ar1 div img{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
+#product #ar2 div img{
+    height: 480px;
+    width: 400px;
+    border-radius: 5px;
+}
+#product #ar2 div{
+    height: 480px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
