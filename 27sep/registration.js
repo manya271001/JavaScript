@@ -15,7 +15,26 @@ function data(){
          selectedname.style.outlineColor="red";
         return false;
     }
-    
+    if(secondName===""){
+        document.querySelector("#errorsecondname").innerHTML="enter second name"
+        let selectedname=document.querySelector("#secondName")
+        selectedname.style.borderColor="red"
+        selectedname.style.outlineColor="red"
+        return false;
+    }
+    if(email===""){
+     document.querySelector("#erroremail").innerHTML ="enter email please"
+     let selectedemail = document.querySelector("#email")
+     selectedemail.style.borderColor="red"
+     selectedemail.style.outlineColor="red"
+     return false;
+    }
+    if(password ===""){
+        document.querySelector("#errorpassword").innerHTML="enter passowrd"
+        let selectedpass = document.querySelector("#password");
+        selectedpass.style.borderColor ="red"
+        selectedpass.style.outlineColor = "red"
+    }
     
 
 
