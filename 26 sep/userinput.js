@@ -1,6 +1,7 @@
 function data(){
     let selectedname = document.querySelector('#name')
     let name = selectedname.value;
+     
     if(name ===""){
         window.alert("enter name")
         return false;
