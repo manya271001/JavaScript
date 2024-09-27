@@ -5,7 +5,6 @@ function data(){
     let password = document.querySelector("#password").value;
     let confirmpassword = document.querySelector("#confirmpassword").value; 
    let number= document.querySelector("#number").value; 
-      let course= document.querySelector("#course").value;
     if(name ===""){
         // displaying message using message on html page and turnig the input filed red
         document.querySelector("#errorname").innerHTML="please enter name"
@@ -34,8 +33,20 @@ function data(){
         let selectedpass = document.querySelector("#password");
         selectedpass.style.borderColor ="red"
         selectedpass.style.outlineColor = "red"
+        return false;
     }
-    
+    if(confirmpassword===""){
+        document.querySelector("#errorCpass").innerHTML="enter cofirm password"
+        document.querySelector('#confirmpassword').style.borderColor="red"
+        document.querySelector('#confirmpassword').style.outlineColor="red"
+        return false;
+    }
+    if(number===""){
+        document.querySelector("#errorphone").innerHTML="enter phone number"
+        document.querySelector("#number").style.borderColor="red"
+        document.querySelector("#number").style.outlineColor="red"
+        return false;
+    }
 
 
 }
