@@ -28,15 +28,20 @@
     <h1> Registration Form!   </h1>
     <form action="">
         <div id="errorname"></div>
-        <input type="text" id="name" placeholder="First Name"> <br>
+        <input type="text" id="name" placeholder="First Name" onblur="s();"> <br>
+
         <div id="errorsecondname"></div>
-        <input type=" text" id="secondName" placeholder="Second Name"> <br>
+        <input type=" text" id="secondName" placeholder="Second Name" onblur="s();"> <br>
+
         <div id="erroremail"></div>
         <input type="email" id="email" placeholder="Email"> <br>
+
         <div id="errorpassword"></div>
         <input type="password" id="password" placeholder="Enter password"> <br>
+
         <div id="errorCpass"></div>
         <input type="password" id="confirmpassword" placeholder="Confirm password"> <br>
+
         <div id="errorphone"></div>
         <input type="tel" id="number" placeholder="Enter Mobile Number"> <br>
         <button onclick="return data();">SUBMIT</button>
