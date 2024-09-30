@@ -49,28 +49,56 @@ function data(){
     }
 }
 function s(){
-    let selectedinput=document.querySelector('input')
-     selectedinput.style.borderColor="rgb(118, 118, 118) "
-    selectedinput.style.outlineColor="rgb(118, 118, 118)"
-    selectedinput.style.borderWidth="1.5px"
-    selectedinput.style.borderRadius="1.5PX"
-        let selectederrorsecondname=document.querySelector("#errorsecondname")
+    // for name
+    let selectedname=document.querySelector("#name")
+     selectedname.style.borderColor="rgb(118, 118, 118) "
+    selectedname.style.outlineColor="rgb(118, 118, 118)"
+    selectedname.style.borderWidth="1.5px"
+    selectedname.style.borderRadius="1.5PX"
+
+    // for second name
+    let selectedSecondName=document.querySelector("#secondName")
+    let selectederrorsecondname=document.querySelector("#errorsecondname")
     selectederrorsecondname.innerHTML="";
-    selectedinput.style.borderColor="rgb(118, 118, 118) "
-    selectedinput.style.outlineColor="rgb(118, 118, 118)"
-    selectedinput.style.borderWidth="1.5px"
-    selectedinput.style.borderRadius="1.5PX"
+    selectedSecondName.style.borderColor="rgb(118, 118, 118) "
+    selectedSecondName.style.outlineColor="rgb(118, 118, 118)"
+    selectedSecondName.style.borderWidth="1.5px"
+    selectedSecondName.style.borderRadius="1.5PX"
+
+    // for email
+    let selectedEmail=document.querySelector("#email")
     let selectederroremail=document.querySelector("#erroremail")
     selectederroremail.innerHTML="";
-    selectedinput.style.borderColor="rgb(118, 118, 118) "
-    selectedinput.style.outlineColor="rgb(118, 118, 118)"
-    selectedinput.style.borderWidth="1.5px"
-    selectedinput.style.borderRadius="1.5PX"
+    selectedEmail.style.borderColor="rgb(118, 118, 118) "
+    selectedEmail.style.outlineColor="rgb(118, 118, 118)"
+    selectedEmail.style.borderWidth="1.5px"
+    selectedEmail.style.borderRadius="1.5PX"
+
+    // for password
+    let selectedpass=document.querySelector("#password")
     let selectederrorpassword=document.querySelector("#errorpassword")
     selectederrorpassword.innerHTML="";
-    let selectederrorCpass=document.querySelector("#errorCpass")
+    selectedpass.style.borderColor="rgb(118, 118, 118) "
+    selectedpass.style.outlineColor="rgb(118, 118, 118)"
+    selectedpass.style.borderWidth="1.5px"
+    selectedpass.style.borderRadius="1.5PX"
+
+    // for confirm password
+    let selectedCpass = document.querySelector("#confirmpassword")
+     let selectederrorCpass=document.querySelector("#errorCpass")
     selectederrorCpass.innerHTML="";
+    selectedCpass.style.borderColor="rgb(118, 118, 118) "
+    selectedCpass.style.outlineColor="rgb(118, 118, 118)"
+    selectedCpass.style.borderWidth="1.5px"
+    selectedCpass.style.borderRadius="1.5PX"
+
+    //  for phone
+    let selectednumber = document.querySelector("#number")
     let selectederrorphone=document.querySelector("#errorphone")
     selectederrorphone.innerHTML="";
+    selectednumber.style.borderColor="rgb(118, 118, 118) "
+    selectednumber.style.outlineColor="rgb(118, 118, 118)"
+    selectednumber.style.borderWidth="1.5px"
+    selectednumber.style.borderRadius="1.5PX"
    
 }
