@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        
+        }
+        input{
+            padding: 0px 20px;
+            
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: cornflowerblue;
+        }
+    </style>
 </head>
 <body>
-   <script src="./script.js"></script> 
+    <h1> Registration Form!   </h1>
+    <form action="">
+        <div id="errorname"></div>
+        <input type="text" id="name" placeholder="First Name" onblur="s('name');"> <br>
+
+        <div id="errorsecondName"></div>
+        <input type=" text" id="secondName" placeholder="Second Name" onblur="s('secondName');"> <br>
+
+        <div id="erroremail"></div>
+        <input type="email" id="email" placeholder="Email" onblur="s('email');"> <br>
+
+        <div id="errorpassword"></div>
+        <input type="password" id="password" placeholder="Enter password" onblur="s('password');"> <br>
+
+        <div id="errorconfirmpassword"></div>
+        <input type="password" id="confirmpassword" placeholder="Confirm password" onblur="s(confirmpassword);"> <br>
+
+        <div id="errornumber"></div>
+        <input type="tel" id="number" placeholder="Enter Mobile Number" onblur="s('number');"> <br>
+        <button onclick="return data();">SUBMIT</button>
+    </form>
+    <script src="./script.js"></script>
 </body>
 </html>
