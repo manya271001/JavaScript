@@ -10,3 +10,14 @@ function run(){
 setTimeout(()=>{
     console.log("second time hello using another way");
 },5000)
+
+// setTimeout(()=>{
+//     window.alert("popup after 7s")
+// },7000);
+function loading(){
+    setTimeout(run,3000);
+    function run(){
+        document.querySelector("#website").style.display = "block"; 
+        document.querySelector("#img").style.display = "none"; 
+    }
+}
