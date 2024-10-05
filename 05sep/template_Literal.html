@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>visiting card</title>
+    <style>
+        #card{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 700px;
+            box-shadow: 0px 0px 20px 20px silver;
+            border-radius: 15px;
+            margin-top: 15%;
+            
+
+
+        }
+         #card div img{
+            width: 100px;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
-    <form action="">
-        
+ <form action="">
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="text" id="Phone" placeholder="Enter Phone Number">
+        <input type="text" id="email" placeholder="Enter Email">
+        <input type="text" id="designation" placeholder="Enter designation">
+        <input type="text" id="address" placeholder="Enter Adress">
+        <input type="text" id="img" placeholder="add image url">
+        <button onclick="card();">Gnerate card</button>
     </form>
+    <div id="output"></div>
     <script src="./template_Literal.js"></script>
+    
 </body>
 </html>
