@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        #popup{
+            background-color: #095f9c;
+            height: 300px;
+            width: 700px;
+            border-radius: 20px;
+            margin-left:340px ;
+            display: none;
+             position: relative;
+            
+        }
+        #icon{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+
+        }
+        #partner{
+            margin-top: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        #part{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+        }
+         #part a{
+            width: 100px;
+            color: #095f9c;
+            border: 1px solid white;
+            background-color: white;
+            padding: 10px;
+            border-radius: 15px;
+            text-decoration: none;
+            text-align: center;
+
+         }
+        #subscribe{
+            display: flex;
+            flex-direction: column; 
+            gap: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            margin: 20px 30px;
+            height: 170px;
+        }
+        #content{
+            text-align: center;
+        }
+        #emailSection{
+            text-align: center;
+        }
+        #emailSection a{
+            width: 100px;
+            background-color: #095f9c;
+            border: 1px solid ;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            text-decoration: none;
+            text-align: center;
+            margin-left: 40px;
+        }
+         #emailSection input{
+            border-radius: 15px;
+            padding: 5px 15px;
+         }
+        h1{
+            text-transform: uppercase;
+            color: #095f9c;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body onload="loading();">
+     <h1>welcome to my website</h1>
+    <section id="popup">
+        <div id="partner">
+            <div id="part">
+                <h3>Become a Partner</h3>
+                <a href="#" id="button"> Apply Now </a>
+            </div>
+              <div id="part">
+                <h3>Looking for Job??</h3>
+                <a href="#" id="button"> Apply Now </a>
+            </div>
+            <div id="part">
+                <h3>Inquiry for project</h3>
+                <a href="#" id="button"> Apply Now </a>
+            </div>
+            <div id="icon" onclick="removedisplay();">
+                <i class="fa-regular fa-circle-xmark" style="color: #f7f7f8;"></i>
+            </div>
+ </div>
+ <div id="subscribe">
+    <div id="content"> <h3>Join us to know problems Web3.0 is solving around the world <br><h5>Keep up to date with latest blogs/articles from our experts</h5></h3>
+        
+    </div>
+    <div id="emailSection">
+        <input type="email" name="" id="email" placeholder="Email adress">
+        <a href="#">Subscribe Now</a>
+    </div>
+ </div>
+    </section>
+   
+    <script src="./loading.js"></script>
+</body>
+</html>
