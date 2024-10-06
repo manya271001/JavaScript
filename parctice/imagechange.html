@@ -1,0 +1,36 @@
+<!-- Write a JavaScript program that changes an image when a button is clicked. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image{
+            overflow:none;
+            width: 400px;
+            height: 300px;
+            margin-top: 10%;
+            margin-left: 35%;
+            border-radius: 15%;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+             border-radius: 15%;
+        }
+        button{
+            margin-left: 45%;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="image">
+        <img src="./img1.jpg" alt="" id="img">
+    </div>
+    <button onclick="change();" ondblclick="change2();">CHANGE IMAGE</button>
+    <script src="./imagechange.js"></script>
+</body>
+</html>
+
