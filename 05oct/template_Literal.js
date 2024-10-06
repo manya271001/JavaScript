@@ -4,7 +4,7 @@ function card(){
     let email=document.querySelector('#email').value;
     let designation=document.querySelector('#designation').value;
     let address=document.querySelector('#address').value;
-    let img=document.querySelector('#img').value;
+    let image=document.querySelector('#img').value;
     console.log(name,Phone,email,designation,address,img)
     let inputvalue= `   <section id="card">
         <div id="detail">
@@ -15,7 +15,7 @@ function card(){
     <h3>${address}</h3>
     </div>
     <div id="image">
-        <img src="./blog4.jpg" alt="img not found">
+        <img src="${image}" alt="img not found">
     </div>
     </section>`
     let output=document.querySelector('#output').innerHTML=inputvalue;
