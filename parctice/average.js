@@ -1,9 +1,8 @@
 function average(){
-  let num1=parseInt(window.prompt("enter 1st number"))
-  let num2=parseInt(window.prompt("enter 2nd number"))
-  let num3=parseInt(window.prompt("enter 3rd number"))
-  let result= (num1+num2+num3)/3;
-  window.prompt("your average is " + result)
-
+   let number1=parseInt(document.querySelector("#num1").value);
+    let number2=parseInt(document.querySelector("#num2").value);
+    let number3=parseInt(document.querySelector("#num3").value);
+    let sum=(number1+number2+number3)/3;
+    let resultant=document.querySelector("#result")
+    resultant.innerHTML=("your avg is :"+sum);
 }
-average();
