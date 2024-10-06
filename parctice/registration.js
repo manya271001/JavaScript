@@ -5,14 +5,16 @@ function data(){
     let selectedcpassword = document.querySelector("#Cpassword").value;
     let selectedphone = document.querySelector('#phone').value;
     console.log(selectedname,selectedemail,selectedcpassword,selectedcpassword,selectedphone)
-    if(selectedname==""){
+        event.preventDefault();
+
+    if(selectedname===""){
         document.querySelector("#errorname").innerHTML="enter name"
         let selectedname = document.querySelector('#name');
         selectedname.style.borderColor="red"
         selectedname.style.outlineColor="red"
         return false
     }
-    if(selectedemail==""){
+    if(selectedemail===""){
            document.querySelector("#erroremail").innerHTML="enter email"
          let selectedemail = document.querySelector('#email')
          selectedemail.style.borderColor="red"
@@ -28,7 +30,7 @@ function data(){
          return false;
 
     }
-     if(selectedpassword==""){
+     if(selectedpassword===""){
     document.querySelector("#errorpassword").innerHTML="enter password"
       let selectedpassword = document.querySelector('#password')
       selectedpassword.style.borderColor="red"
@@ -49,9 +51,57 @@ function data(){
       selectedpassword.style.outlineColor="red"
       return false;
     }
-    if(selectedcpassword !== selectedpassword){
-    
-    }
+    if(selectedcpassword===""){
+      document.querySelector("#errorCpassword").innerHTML="enter confirm password"
+       let selectedcpassword = document.querySelector("#Cpassword")
+       selectedcpassword.style.borderColor="red"
+       selectedcpassword.style.borderColor="red"
+       return false
 
+    }
+    if(selectedpassword !== selectedcpassword){
+    window.alert("password do not match")
+     let selectedpasswordField = document.querySelector('#password');
+        selectedpasswordField.value = "";
+        selectedpasswordField.style.borderColor = "red";
+        selectedpasswordField.style.outlineColor = "red";
+        selectedpasswordField.focus();
+
+        let selectedcpasswordField = document.querySelector("#Cpassword");
+        selectedcpasswordField.value = "";
+        selectedcpasswordField.style.borderColor = "red";
+        selectedcpasswordField.style.outlineColor = "red";
+
+        return false;
+    }
+    if(selectedphone===""){
+      document.querySelector("#errorphone").innerHTML="enter phone number"
+      let selectedphone = document.querySelector('#phone')
+      selectedphone.style.borderColor="red"
+      selectedphone.outlineColor="red"
+      return false;
+    }
+    if(selectedphone.length!=10){
+      document.querySelector("#errorphone").innerHTML="enter 10 digit phone number"
+      let selectedphone = document.querySelector('#phone')
+      selectedphone.style.borderColor="red"
+      selectedphone.outlineColor="red"
+      return false;
+    }
+    if(isNaN(selectedphone)){
+        document.querySelector("#errorphone").innerHTML="enter only digits [1-9]"
+      let selectedphone = document.querySelector('#phone')
+      selectedphone.style.borderColor="red"
+      selectedphone.outlineColor="red"
+      return false; 
+    }
+}
+
+function leaving(arg){
+  let selectedfield=document.querySelector(`#${arg}`)
+  selectedfield.style.borderColor="black"
+  selectedfield.style.outlineColor="black"
+  let selectederror=document.querySelector(`#error${arg}`).innerHTML=""
+  
 
 }
