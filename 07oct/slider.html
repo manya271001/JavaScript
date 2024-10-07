@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #slider{
+        width: 1000px;
+        overflow-x: hidden;
+        border: 2px solid black;
+        margin-left: auto;
+        margin-top: auto; 
+    }
+    article{
+        display: flex;
+    }
+    #slider article div img{
+        height: 400px;
+        width: 1000px;
+    }
+</style>
+<body onload="slider();">
+    <section id="slider">
+        <article id="slidediv">
+            <div>
+                <img src="image1.jpeg" alt="">
+            </div>
+            <div>
+                <img src="image2.jpeg" alt="">
+            </div>
+            <div>
+                <img src="image3.jpeg"alt="">
+            </div>
+
+        </article>
+    </section>
+    <script src="./slider.js"></script>
+</body>
+</html>

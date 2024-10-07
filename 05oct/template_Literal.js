@@ -22,4 +22,5 @@ function card(){
     document.querySelector('form').style.display="none"
     print();
     
+    return false;
 }
