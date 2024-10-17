@@ -4,7 +4,6 @@ function run(){
     'https://images.unsplash.com/photo-1535930749574-1399327ce78f?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     ' https://plus.unsplash.com/premium_photo-1677545182078-2fe0e0e6c336?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 ]
-arrimg.join(" ")
 let output = document.querySelector('#answer')
 output.innerHTML=arrimg.map((imgurl)=>`
 <img src="${imgurl}" alt="not found" style="height:400px;width:400px">
