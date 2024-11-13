@@ -9,3 +9,7 @@ console.log(Math.ceil(c))
 console.log(Math.abs(c)) // convert -ve number to positive
 console.log(Math.random())
 console.log(Math.pow(4,3))
+let  f = -3.1
+console.log(Math.floor(f))
+console.log(Math.trunc(f))
+console.log(Math.ceil(f))
