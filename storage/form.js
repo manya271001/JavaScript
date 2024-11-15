@@ -13,4 +13,10 @@ function send(){
     document.querySelector("#first").innerHTML=a;
     document.querySelector("#second").innerHTML=b;
     document.querySelector("#third").innerHTML=c;
+    let obj = {
+        name:"manyaa",
+        age:22,
+        contact:89900909
+    }
+    console.log(obj)
 }
