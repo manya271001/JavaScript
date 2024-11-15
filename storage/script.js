@@ -13,8 +13,10 @@ function send(){
     let obj={
         name: document.querySelector("#name").value,
         email:document.querySelector("#contact").value,
-        course:document.querySelector("#age").value
+        age:document.querySelector("#age").value
     }
 
-    localStorage.setItem("data",json.stringify(obj))
+    localStorage.setItem("data",JSON.stringify(obj))//convert object data into string
 }
+let d = JSON.parse(localStorage.getItem("data")) // convert string into object bcz we cannot access the value of string directly 
+console.log(d.name);
