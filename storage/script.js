@@ -12,7 +12,7 @@ function send(){
 
     let obj={
         name: document.querySelector("#name").value,
-        email:document.querySelector("#contact").value,
+        contact:document.querySelector("#contact").value,
         age:document.querySelector("#age").value
     }
 
@@ -20,3 +20,11 @@ function send(){
 }
 let d = JSON.parse(localStorage.getItem("data")) // convert string into object bcz we cannot access the value of string directly 
 console.log(d.name);
+
+let myname= document.querySelector("#myname")
+let mycontact= document.querySelector("#mycontact")
+let myage= document.querySelector("#myage")
+
+myname.innerHTML=d.name
+mycontact.innerHTML=d.contact
+myage.innerHTML=d.age
