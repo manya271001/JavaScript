@@ -1,0 +1,24 @@
+{
+    "student":[
+        {
+            "name":"manyaa",
+            "age":22,
+            "course":"FSD"
+        },
+         {
+            "name":"mhjh",
+            "age":22,
+            "course":"FSD"
+        },
+         {
+            "name":"juhughugh",
+            "age":22,
+            "course":"FSD"
+        },
+         {
+            "name":"hgggyfyrf",
+            "age":22,
+            "course":"FSD"
+        }
+    ]
+}
