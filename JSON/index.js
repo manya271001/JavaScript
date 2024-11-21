@@ -1,3 +1,4 @@
+//READING DATA
 async function fetData(){
     let d= await fetch("http://localhost:3000/student")
     let data =  await d.json()
@@ -26,7 +27,26 @@ async function fet(){
 
 }
 fet()
-
+// DELETING DATA
 async function mydelete(id){
      await fetch(`http://localhost:3000/student/${id}`,{method:"DELETE"})
+     // then is a function that takes place after suscessfull return of promise it is an arrow function
+     .then(res=>alert("delete sucessfull ....!!!"))
+}
+
+// INSERTING DATA
+function submitData(){
+    let data={
+        name:document.querySelector('#name').value,
+        age:document.querySelector('#age').value,
+        course:document.querySelector('#course').value
+    }
+    fetch("http://localhost:3000/student",{
+        method:'POST',
+        headers:{
+            'content-type':'application/json'
+        },
+        body:JSON.stringify(data)
+    })
+    .then(res=>alert("inserted...!!!!!!"))
 }
