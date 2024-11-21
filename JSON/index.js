@@ -44,8 +44,10 @@ function submitData(){
     fetch("http://localhost:3000/student",{
         method:'POST',
         headers:{
+            // tell the browser about the type of data (here we are getting data from HTML and sending it back to json and JS work as the mediator btw the two)
             'content-type':'application/json'
         },
+        // convert the body data into string format
         body:JSON.stringify(data)
     })
     .then(res=>alert("inserted...!!!!!!"))
