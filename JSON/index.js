@@ -3,9 +3,9 @@ async function fetData(){
     let d= await fetch("http://localhost:3000/student")
     let data =  await d.json()
     let finalData=data.map((t)=>`
-    // <h1>${t.id}</h1>
-    // <h1>${t.name}</h1>
-    // <h1>${t.age}</h1>
+     <h1>${t.id}</h1>
+     <h1>${t.name}</h1>
+    <h1>${t.age}</h1>
      <h1>${t.course}</h1>
     `).join("")
     document.querySelector("#output").innerHTML=finalData
@@ -21,6 +21,7 @@ async function fet(){
             <td>${t.age}</td>
             <td>${t.course}</td>
             <td> <button onclick="mydelete('${t.id}')">DELETE</button></td>
+            <td> <button onclick="updateData('${t.id}')">EDIT</button></td>
         </tr>
     `).join("")
     document.querySelector("#output").innerHTML=finalData
@@ -52,3 +53,16 @@ function submitData(){
     })
     .then(res=>alert("inserted...!!!!!!"))
 }
+//TO UPDATE DATA
+async function updateData(id){
+    let data = await fetch(`http://localhost:3000/student/${id}`)
+    let newdata = await data.json()
+    let selectedData=`
+      <input type="text"  value="${newdata.id}" readonly> <br><br>
+     <input type="text"  id="name1" value="${newdata.name}"> <br><br>    
+       <input type="text"  id="age1" value="${newdata.age}"> <br><br>
+     <input type="text"  id="course1" value="${newdata.course}"> <br><br>
+
+      `  
+      document.querySelector("#editable").innerHTML=selectedData
+     }
