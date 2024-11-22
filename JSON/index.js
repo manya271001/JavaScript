@@ -58,11 +58,28 @@ async function updateData(id){
     let data = await fetch(`http://localhost:3000/student/${id}`)
     let newdata = await data.json()
     let selectedData=`
-      <input type="text"  value="${newdata.id}" readonly> <br><br>
-     <input type="text"  id="name1" value="${newdata.name}"> <br><br>    
-       <input type="text"  id="age1" value="${newdata.age}"> <br><br>
-     <input type="text"  id="course1" value="${newdata.course}"> <br><br>
+      <input type="text"  value="${newdata.id}" readonly> <br>
+     <input type="text"  id="name1" value="${newdata.name}"> <br>  
+       <input type="text"  id="age1" value="${newdata.age}"> <br>
+     <input type="text"  id="course1" value="${newdata.course}"> <br>
+     <input type="submit" onclick="finalUpDate('${newdata.id}')"> <br>
 
       `  
       document.querySelector("#editable").innerHTML=selectedData
+     }
+
+     function finalUpDate(id){
+        let fdata={
+            name:document.querySelector('#name1').value,
+            age:document.querySelector('#age1').value,
+            course:document.querySelector('#course1').value,
+        }
+        fetch(`http://localhost:3000/student/${id}`,{
+            method:'PUT',
+            headers:{
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(fdata)
+        })
+        .then(r=>alert("updatedd....!!!!"))
      }
